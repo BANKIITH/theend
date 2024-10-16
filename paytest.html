@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Window</title>
+    <link rel="stylesheet" href="pay.css">
+
+</head>
+<body>
+
+    <div class="payment-container">
+        <h2>วิธีชำระเงิน</h2>
+        <div class="payment-methods">
+            <label for="payment-method">โปรดเลือกวิธีชำระเงิน:</label><br><br>
+            <select id="payment-method">
+                <option value="truemoney">TrueMoney</option>
+                <option value="paypal">PayPal</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="bank">ธนาคารออนไลน์</option>
+                <option value="eclub">eClub Points</option>
+            </select>
+        </div>
+        <button onclick="proceedToPayment()">ดำเนินการต่อ</button>
+
+    </div>
+
+    <script>
+        function proceedToPayment() {
+            const method = document.getElementById("payment-method").value;
+            alert("You selected: " + method + ". Proceeding to payment...");
+            
+        }
+    </script>
+
+</body>
+</html>

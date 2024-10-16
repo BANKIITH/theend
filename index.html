@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiD Game Store</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+
+    <header>
+        <h1>BiD Game Store</h1>
+    </header>
+    <div class="button-container">
+        <button class="btn btn-login">ลงชื่อเข้าใช้</button>
+        <button class="btn btn-signup">ลงชื่อสมัคร</button>
+    </div>
+
+    <div class="cart">
+        <img src="../img/cart.jpg" alt="Cart" class="cart-icon">
+        <div class="cart-notification" id="cart-notification">0</div>
+        <h4>Your Cart</h4>
+            <div id="cart-content">
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+    </div>
+    <div id="cart">
+        <h2>My Cart</h2>
+        <div id="cart-items">
+        </ul>
+        <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+    
+    
+    <div class="container">
+        <section class="game-section">  
+            <h2>New on Store</h2>
+            <div class="game-list">
+                <div class="game-card" onclick="addToCart('Warhammer 40,000: Space Marine 2', 1490)">Add to Cart</button>
+                    <img src="../img/game1.jpg" alt="Warhammer 40,000: Space Marine 2">
+                    <h3>Warhammer 40,000: Space Marine 2</h3>
+                    <p class="price">THB฿1,490</p>
+                </div>
+                <div class="game-card" onclick="addToCart('Black Myth: Wukong', 1799)">Add to Cart</button>
+                    <img src="../img/game2.jpg" alt="Black Myth: Wukong">
+                    <h3>Black Myth: Wukong</h3>
+                    <p class="price">THB฿1,799</p>
+                </div>
+                <div class="game-card" onclick="addToCart('Red Dead Redemption 2', 1599)">Add to Cart</button>
+                    <img src="../img/game8.jpg" alt="Red Dead Redemption 2">
+                    <h3>Red Dead Redemption 2</h3>
+                    <p class="price">THB฿1,599</p>
+                </div>
+                <div class="game-card" onclick="addToCart('Call of Duty®: Modern Warfare® III', 2322)">Add to Cart</button>
+                    <img src="../img/game9.jpg" alt="Call of Duty®: Modern Warfare® III">
+                    <h3>Call of Duty®: Modern Warfare® III</h3>
+                    <p class="price">THB฿2,322</p>
+                </div>
+                <div class="game-card" onclick="addToCart('Far Cry® 6', 1600)">Add to Cart</button>
+                    <img src="../img/game10.jpg" alt="Far Cry® 6">
+                    <h3>Far Cry® 6</h3>
+                    <p class="price">THB฿1,600</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-section">
+            <h2>Hot sales</h2>
+            <div class="game-list">
+                <div class="game-card" onclick="addToCart('Starbound', 78.75)">Add to Cart</button>
+                    <img src="../img/game3.jpg" alt="Starbound">
+                    <h3>Starbound</h3>
+                    <p class="discount">-75%</p>
+                    <p class="price">THB฿78.75</p>
+                </div>
+                <div class="game-card" onclick="addToCart('Grand Theft Auto V', 704.25)">Add to Cart</button>
+                    <img src="../img/game4.jpg" alt="Grand Theft Auto V">
+                    <h3>Grand Theft Auto V</h3>
+                    <p class="discount">-25%</p>
+                    <p class="price">THB฿704.25</p>
+                </div>
+                <div class="game-card" onclick="addToCart('Assassins Creed® Odyssey', 320)">Add to Cart</button>
+                    <img src="../img/game5.jpg" alt="Assassin's Creed® Odyssey">
+                    <h3>Assassin's Creed® Odyssey</h3>
+                    <p class="discount">-80%</p>
+                    <p class="price">THB฿320</p>
+                </div>
+                <div class="game-card" onclick="addToCart('MotoGP™23', 207)">Add to Cart</button>
+                    <img src="../img/game6.jpg" alt="MotoGP™23">
+                    <h3>MotoGP™23</h3>
+                    <p class="discount">-85%</p>
+                    <p class="price">THB฿207</p>
+                </div>
+                <div class="game-card" onclick="addToCart('Green Hell', 105.27)">Add to Cart</button>
+                    <img src="../img/game7.jpg" alt="Green Hell">
+                    <h3>Green Hell</h3>
+                    <p class="discount">-67%</p>
+                    <p class="price">THB฿105.27</p>
+                </div>
+            </div>
+            <section class="game-section">
+                <h2>Recommended for you</h2>
+                <div class="game-list">
+                    <div class="game-card" onclick="addToCart('EA SPORTS FC™ 24', 549)">Add to Cart</button>
+                        <img src="../img/game11.jpg" alt="EA SPORTS FC™ 24">
+                        <h3>EA SPORTS FC™ 24</h3>
+                        <p class="price">THB฿549</p>
+                    </div>
+                    <div class="game-card" onclick="addToCart('Left 4 Dead 2', 220)">Add to Cart</button>
+                        <img src="../img/game12.jpg" alt="Left 4 Dead 2">
+                        <h3>Left 4 Dead 2</h3>
+                        <p class="price">THB฿220</p>
+                    </div>
+                    <div class="game-card" onclick="addToCart('Planet Zoo', 970)">Add to Cart</button>
+                        <img src="../img/game13.jpg" alt="Planet Zoo">
+                        <h3>Planet Zoo</h3>
+                        <p class="price">THB฿970</p>
+                    </div>
+                    <div class="game-card" onclick="addToCart('cyberpunk 2077', 1799)">Add to Cart</button>
+                        <img src="../img/game14.jpg" alt="Cyberpunk 2077">
+                        <h3>Cyberpunk 2077</h3>
+                        <p class="price">THB฿1,799</p>
+                    </div>
+                    <div class="game-card" onclick="addToCart('Plants vs. Zombies GOTY Edition', 170)">Add to Cart</button>
+                        <img src="../img/game15.jpg" alt="Plants vs. Zombies GOTY Edition">
+                        <h3>Plants vs. Zombies GOTY Edition</h3>
+                        <p class="price">THB฿170</p>
+                    </div>
+        </section>
+    </div>
+    <script>
+        let cart = [];
+        let cartCount = 0;
+
+        function addToCart(itemName, itemPrice) {
+    cart.push({ item: itemName, price: itemPrice });
+    cartCount++;
+    document.getElementById('cart-notification').innerText = cartCount;
+    updateCartDisplay();
+}
+
+
+        function toggleCart() {
+            const cartItems = document.getElementById('cart-items');
+            cartItems.style.display = cartItems.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function updateCartDisplay() {
+            const cartContent = document.getElementById('cart-content');
+            if (cart.length === 0) {
+                cartContent.innerHTML = '<p>Your cart is empty</p>';
+            } else {
+                let content = '';
+                cart.forEach((item, index) => {
+                    content += `<p>${item.item} - THB฿${item.price}</p>`;
+                });
+                cartContent.innerHTML = content;
+            }
+        }
+
+        function redirectToPayment() {
+            window.location.href = "../Web/paytest.html";
+        }
+    </script>
+</body>
+</html>
