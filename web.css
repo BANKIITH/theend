@@ -33,6 +33,7 @@ body {
         position: relative;
         display: inline-block;
         cursor: pointer;
+        color: aliceblue;
     }
     .cart-icon {
          width: 40px;

@@ -25,11 +25,12 @@
             </div>
         </div>
     </div>
-    <div id="cart">
+    
+    <div cl="cart">
         <h2>My Cart</h2>
         <div id="cart-items">
         </ul>
-        <button id="checkout-btn">Checkout</button>
+        <button id="checkout-btn" onclick="redirectToPayment()">Checkout</button>
         </div>
     </div>
     
@@ -161,7 +162,7 @@
         }
 
         function redirectToPayment() {
-            window.location.href = "../Web/paytest.html";
+            window.location.href = "../paytest.html";
         }
     </script>
 </body>
